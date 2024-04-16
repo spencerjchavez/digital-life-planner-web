@@ -14,11 +14,12 @@ const TodoList = styled.ul`
 
 `;
 
-export default function Todos({todos, todosDispatch}) {
+export default function Todos() {
+    const todos=  [];
     return <Container>
         <h2>To-Do</h2>
         <TodoList>
-            {todos.map( todo => <TodoListItem todo={todo} todoDispatch={todosDispatch(todo.todoId)} />)}
+            {todos.map( todo => <TodoListItem todo={todo} />)}
         </TodoList>
     </Container>
 }

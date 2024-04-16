@@ -1,6 +1,5 @@
 import { useState, useReducer } from 'react';
 import styled from 'styled-components';
-import reducer from './features/Reducer';
 import Report from './features/report/Report';
 import Todos from './features/todos/Todos';
 import Calendar from './features/calendar/Calendar';
@@ -27,15 +26,6 @@ const Container = styled.div`
 
 export default function RootContainer() {
     const report = fetchReport();
-    
-    const [state, dispatch] = useReducer(reducer, {});
-
-    /* 
-        States to keep track of: desires, goals, todos, events
-        Should I have a single reducer that keeps track of all 4?
-    */
-
-
 
     return <Container>
         <InfoBar />

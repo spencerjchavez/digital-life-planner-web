@@ -5,7 +5,7 @@ const Container = styled.div`
     gap: 15px;
 `;
 
-export default function TodoListItem({ todo, todoDispatch}) {
+export default function TodoListItem({todo}) {
     return <Container>
         <p>{todo.name}</p>
     </Container>
