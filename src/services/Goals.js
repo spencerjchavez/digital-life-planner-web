@@ -20,7 +20,6 @@ function parseGoalFromServerObject(obj) {
 
 export function fetchGoalsByDate() {
     const obj = JSON.parse(goalsJson);
-    console.log(obj);
     return obj.goals['2024-04-04'].map(goal => {
         return parseGoalFromServerObject(goal)
     });

@@ -3,7 +3,6 @@ import styled from 'styled-components';
 import Report from './features/report/Report';
 import Todos from './features/todos/Todos';
 import Calendar from './features/calendar/Calendar';
-import fetchReport from './services/Report';
 import InfoBar from './features/InfoBar';
 
 const HContainer = styled.div`
@@ -25,14 +24,12 @@ const Container = styled.div`
 
 
 export default function RootContainer() {
-    const report = fetchReport();
-
     return <Container>
         <InfoBar />
         <HContainer $flexGrow={1}>
             <VContainer $flexGrow={1}>
                 <VContainer $flexGrow={0}>
-                    <Report report={report} />
+                    <Report/>
                 </VContainer>
                 <VContainer $flexGrow={1}>
                     <Todos todos={[]}/>

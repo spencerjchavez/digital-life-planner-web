@@ -7,7 +7,7 @@ const Container = styled.div`
     height: 100%;
     padding-left: 40px;
     padding-top: 20px;
-    background-color: rgb(200, 255, 200);
+    #background-color: rgb(200, 255, 200);
 `;
 
 const TodoList = styled.ul`
