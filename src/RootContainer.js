@@ -29,7 +29,7 @@ export default function RootContainer() {
         <HContainer $flexGrow={1}>
             <VContainer $flexGrow={1}>
                 <VContainer $flexGrow={0}>
-                    <Report/>
+                    <Report />
                 </VContainer>
                 <VContainer $flexGrow={1}>
                     <Todos todos={[]}/>
